@@ -1,6 +1,6 @@
 substitutions:
-  name: hdmi-control-palakis
-  friendly_name: "HDMI Control - palakis"
+  name: hdmi-control-faundev
+  friendly_name: "HDMI Control - faundev"
 
 esphome:
   name: "${name}"
@@ -10,7 +10,7 @@ esphome:
   name_add_mac_suffix: true
   project:
     name: SMLIGHT.SLWF-08-HDMI
-    version: "1.0-Palakis"
+    version: "1.0-faundev"
   platform: ESP8266
   board: esp12e
 
@@ -47,10 +47,10 @@ logger:
 
 external_components:
 #  - source: github://johnboiles/esphome-hdmi-cec
-  - source: github://Palakis/esphome-hdmi-cec
+  - source: github://faundev/esphome-hdmi-cec
 
 dashboard_import:
-  package_import_url: github://smlight-tech/slwf-08/esphome-configs/slwf-08-Palakis.yaml
+  package_import_url: github://faundev/slwf-08/esphome-configs/slwf-08-Palakis.yaml
 
 hdmi_cec:
   pin: GPIO14
